@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --yellow: #ffd966;
+    --green_normal_back: #049a5b;
+    --blue: #add8e6;
+}
+body{
+    background-color: var(--green_normal_back);
+}
+header{
+    background-color: var(--blue);
+    width: 100%;
+    padding: 20px;
+}
+.cabecera, #logo, #botones_cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    gap: 5vh;
+}
+#icono_logo{
+    color: #000000;
+    font-size: 10vh;
+}
+#logo{
+    font-family: "Permanent Marker", cursive;
+    font-size: 36px;
+    color: var(--black);
+}
+button{
+    padding: 10px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px rgba(26, 26, 34, 0.2);
+    
+    font-family: "Luckiest Guy", cursive;
+    font-size: 12px;
+}
+#botones_cabecera{
+    gap: 5vh;
+}
