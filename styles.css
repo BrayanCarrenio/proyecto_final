@@ -48,3 +48,24 @@ button{
 #botones_cabecera{
     gap: 5vh;
 }
+.buscar{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 0px; 
+    gap: 5px
+}
+.buscar input{
+    width: 100vh;
+    height: 30px;
+    border: 2px solid var(--black);
+    padding: 10px;
+    border-radius: 20px; /* Radio de borde */
+}
+.eventos h1{
+    color: var(--white);
+    font-size: 24px;
+    padding: 20px;
+    font-family: "Luckiest Guy", cursive;
+}
