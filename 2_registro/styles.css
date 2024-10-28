@@ -36,6 +36,8 @@ body{
     background-color: var(--yellow);
     border: none;
     border-radius: 20px 10px 10px 20px;
+    text-decoration: none;
+    color: var(--black);
 }
 .registro{
     display: flex;
@@ -72,4 +74,6 @@ input{
     background-color: var(--yellow);
     border: 2px solid var(--black);
     border-radius: 20px;
+    text-decoration: none;
+    color: var(--black);
 }
