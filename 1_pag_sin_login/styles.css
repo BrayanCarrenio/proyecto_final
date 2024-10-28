@@ -33,7 +33,7 @@ header{
     color: var(--black);
     gap: 5vh;
 }
-button{
+a{
     padding: 10px;
     background-color: var(--yellow);
     border: none;
@@ -42,6 +42,8 @@ button{
     
     font-family: "Luckiest Guy", cursive;
     font-size: 12px;
+    text-decoration: none;
+    color: var(--black);    
 }
 #botones_cabecera{
     gap: 5vh;
