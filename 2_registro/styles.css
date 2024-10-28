@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+}
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --yellow: #ffd966;
+    --green_normal_back: #049a5b;
+    --blue: #add8e6;
+}
+body{
+    background-color: var(--green_normal_back);
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vh;
+}
+#icono_logo{
+    color: #000000;
+    font-size: 10vh;
+    color: var(--white);
+}
+#logo p{
+    font-size: 36px;
+    color: var(--black);
+    align-self: center;
+    color: var(--white);
+}
+#regresar_sin_login{
+    padding: 8px 14px;
+    margin-left: 4%;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 20px 10px 10px 20px;
+}
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    padding: 3vh;
+    margin: 2% 20%;
+
+    text-align: center;
+
+    background-color: var(--blue);
+    border: 2px solid var(--black);
+    border-radius: 20px;
+}
+.registro p{
+    padding: 0vh 7vh 3vh 7vh;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.registro h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+input{
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+}
+#registro_formulario{
+    padding: 8px 14px;
+    margin-top: 20px;
+    background-color: var(--yellow);
+    border: 2px solid var(--black);
+    border-radius: 20px;
+}
