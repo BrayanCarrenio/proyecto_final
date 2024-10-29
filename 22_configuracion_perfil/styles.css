@@ -45,6 +45,7 @@ header{
     border-radius: 20px 10px 10px 20px;
     text-decoration: none;
     color: var(--black);
+    font-size: 15px;
 }
 .configuracion_perfil{
     width: 100%;
@@ -60,7 +61,7 @@ header{
     justify-content: center;
 
     width: 400px;
-    height: 500px;
+    height: 480px;
     gap: 3vh;
     padding: 10px;
     
@@ -87,7 +88,7 @@ header{
     align-items: center;
     justify-content: center; 
     width: 400px;
-    height: 500px;
+    height: 480px;
 
     gap: 15px;
     background-color: var(--blue);
