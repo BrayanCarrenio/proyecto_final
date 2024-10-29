@@ -31,6 +31,7 @@ body{
     color: var(--white);
 }
 #regresar_sin_login{
+    font-size: 14px;
     padding: 8px 14px;
     margin-left: 4%;
     background-color: var(--yellow);
@@ -53,12 +54,12 @@ body{
 }
 .inicio_de_sesion h1{
     padding: 0vh 7vh 2vh 7vh;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: lighter;
     text-align: center;
 }
 .inicio_de_sesion h2{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: lighter;
 }
 input{
@@ -73,6 +74,7 @@ ul {
     align-self: flex-start;
 }
 #iniciar_sesion{
+    font-size: 15px;
     padding: 8px 14px;
     background-color: var(--yellow);
     border: 1px solid var(--black);

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
 }
 :root{
     --black: #000000;
@@ -15,7 +16,7 @@ body{
 header{
     background-color: var(--blue);
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 .cabecera, #logo, #botones_cabecera{
     display: flex;
@@ -28,7 +29,6 @@ header{
     font-size: 10vh;
 }
 #logo{
-    font-family: "Permanent Marker", cursive;
     font-size: 36px;
     color: var(--black);
     gap: 5vh;
@@ -40,8 +40,7 @@ a{
     border-radius: 20px;
     box-shadow: 4px 5px rgba(26, 26, 34, 0.2);
     
-    font-family: "Luckiest Guy", cursive;
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     color: var(--black);    
 }
@@ -62,10 +61,11 @@ a{
     border: 2px solid var(--black);
     padding: 20px;
     border-radius: 20px; /* Radio de borde */
+    text-align: center;
+    font-size: 20px;
 }
 .eventos h1{
     color: var(--white);
     font-size: 24px;
-    padding: 20px;
-    font-family: "Luckiest Guy", cursive;
+    margin-left: 20px;
 }

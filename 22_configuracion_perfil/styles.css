@@ -13,39 +13,52 @@
 body{
     background-color: var(--green_normal_back);
 }
-#logo{
+header{
+    background-color: var(--blue);
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--black);
+}
+.cabecera, #logo{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 5vh;
+    justify-content: space-between;
+    align-items: center;
 }
 #icono_logo{
     color: #000000;
     font-size: 10vh;
-    color: var(--white);
 }
-#logo p{
+#logo{
+    font-family: "Permanent Marker", cursive;
     font-size: 36px;
     color: var(--black);
-    align-self: center;
-    color: var(--white);
+    gap: 5vh;
 }
-.creacion_perfil{
+#regresar_pagina_principal{
+    padding: 8px 14px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 20px 10px 10px 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+.configuracion_perfil{
     margin-top: 8vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20vh;
+    gap: 30vh;
 }
-.datos_personales{
+.datos_usuario{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 400px;
     gap: 3vh;
     padding: 10px;
     
@@ -53,39 +66,41 @@ body{
     border: 2px solid var(--black);
     border-radius: 20px;
 }
-.datos_personales h2{
-    font-size: 20px;
-    text-align: center;
-}
-.datos_personales input{
-    font-size: 16px;
+.datos_usuario input{
     text-align: center;
     width: 90%;
 }
-.datos_personales textarea{
-    font-size: 16px;
+.datos_usuario textarea{
     text-align: center;
     width: 90%;
     min-height: 90px;
     resize: none;
 }
-.escoger_perfil{
+.cambio_contraseña{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    width: 300px;
+    height: 400px;
+
+
     gap: 15px;
-}
-.escoger_perfil h1{
-    color: var(--white);
-    font-size: 31px;
-    margin-bottom: 20px;
-}
-.escoger_perfil button{
-    font-size: 15px;
     background-color: var(--blue);
+    border: 2px solid var(--black);
+    border-radius: 20px;
+}
+.cambio_contraseña input{
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+}
+.cambio_contraseña button{
+    font-size: 11px;
+    background-color: var(--yellow);
+    color: var(--black);
     padding: 10px;
-    width: 370px;
     padding: 10px;
     border-radius: 10px;
 }
