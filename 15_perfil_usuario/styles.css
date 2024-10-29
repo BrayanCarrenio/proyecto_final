@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+}
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --another_white: #e0e0e0;
+    --yellow: #ffd966;
+    --green_normal_back: #049a5b;
+    --blue: #add8e6;
+}
+body{
+    background-color: var(--green_normal_back);
+}
+header{
+    background-color: var(--blue);
+    width: 100%;
+    padding: 5px;
+}
+.cabecera, #logo, #usuario_boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#icono_logo{
+    color: var(--black);
+    font-size: 10vh;
+}
+#logo{
+    font-size: 36px;
+    color: var(--black);
+    gap: 5vh;
+}
+#usuario_boton{
+    gap: 2vh;
+    margin-right: 20px;
+}
+#usuario_boton p{
+    font-size: 3vh;
+}
+#icono_usuario{
+    color: var(--black);
+    font-size: 6vh;
+}
+.perfil{
+    padding: 3vh;
+    margin: 2% 20%;
+    background-color: var(--another_white);
+    border: 2px solid var(--black);
+}
+.perfil h2{
+    display: inline;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 4vh;
+}
+.perfil p{
+    font-size: 12px;
+    padding-left: 4vh;
+}
+.pestañas{
+    margin-top: 20vh;
+    background-color: var(--white);
+}
