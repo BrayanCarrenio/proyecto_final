@@ -66,3 +66,7 @@ header{
     margin-top: 20vh;
     background-color: var(--white);
 }
+a{
+    display: inline;
+    position: absolute;
+}
