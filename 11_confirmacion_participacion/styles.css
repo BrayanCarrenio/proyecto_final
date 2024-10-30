@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+}
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --yellow: #ffd966;
+    --green_normal_back: #049a5b;
+    --blue: #add8e6;
+    --lightblue: #daecf6;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightblue);
+    height: 100vh;
