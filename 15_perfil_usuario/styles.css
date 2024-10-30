@@ -67,6 +67,16 @@ header{
     background-color: var(--white);
 }
 a{
+    width: min-content;
+    color: var(--black);
     display: inline;
     position: absolute;
+    transition: 1s ease;
+}
+a:hover{
+    color: var(--yellow);
+}
+#añadir_publicacion{
+    margin-left: 10px;
+    font-size: 7vh;
 }
