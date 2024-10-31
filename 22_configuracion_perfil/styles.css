@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Be Vietnam Pro", serif;
 }
 :root{
     --black: #000000;
@@ -30,7 +30,7 @@ header{
     font-size: 10vh;
 }
 #logo{
-    font-family: "Permanent Marker", cursive;
+    font-family: "Be Vietnam Pro", serif;
     font-size: 36px;
     color: var(--black);
     gap: 5vh;
