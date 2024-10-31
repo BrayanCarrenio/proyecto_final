@@ -11,8 +11,18 @@
     --blue: #add8e6;
 }
 body{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightblue);
+    height: 100vh;
+}
+.container{
+    border: black solid 4px;
     background-color: var(--blue);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
 }
 h1{
     font-size: 26px;
@@ -21,14 +31,4 @@ p{
     margin: 20px 0px;
     font-size: 16px;
 }
-a{
-    padding: 5px;
-    background-color: var(--yellow);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 3px 4px rgba(26, 26, 34, 0.2);
-    
-    font-size: 12px;
-    text-decoration: none;
-    color: var(--black);    
-}
+

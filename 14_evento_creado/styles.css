@@ -11,8 +11,11 @@
     --blue: #add8e6;
 }
 body{
-    text-align: center;
-    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightblue);
+    height: 100vh;
 }
 p{
     margin: 20px 0px;
@@ -28,4 +31,11 @@ a{
     font-size: 16px;
     text-decoration: none;
     color: var(--black);    
+}
+.container{
+    border: black solid 4px;
+    background-color: var(--blue);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
 }
