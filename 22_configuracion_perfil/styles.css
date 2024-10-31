@@ -30,7 +30,6 @@ header{
     font-size: 10vh;
 }
 #logo{
-    font-family: "Be Vietnam Pro", serif;
     font-size: 36px;
     color: var(--black);
     gap: 5vh;
