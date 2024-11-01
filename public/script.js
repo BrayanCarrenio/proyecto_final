@@ -2,9 +2,9 @@
 document.addEventListener('DOMContentLoaded', ()=>{ 
     async function handleRegister(e){
         e.preventDefault();
-        const username = document.getElementById('username').value;
-        const email = document.getElementById('email').value;
-        const password =  document.getElementById('password').value;
+        const username = document.getElementById('usuario').value;
+        const email = document.getElementById('correo').value;
+        const password =  document.getElementById('contraseña').value;
 
         try{
             const res = await fetch('http://localhost:5000/api/auth/register',{
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     async function handleLogin(e){
         e.preventDefault();
-        const email = document.getElementById('emaillog').value;
-        const password =  document.getElementById('passwordlog').value;
+        const email = document.getElementById('correo_iniciar_sesion').value;
+        const password =  document.getElementById('contraseña_iniciar_sesion').value;
 
         try{
             const res = await fetch('http://localhost:5000/api/auth/login',{
@@ -51,6 +51,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     }
 
-    document.getElementById('registrar').addEventListener('submit', handleRegister);
-    document.getElementById('ingresar').addEventListener('submit', handleLogin);
+    document.getElementById('registro').addEventListener('submit', handleRegister);
+    document.getElementById('inicio_de_sesion').addEventListener('submit', handleLogin);
 })
