@@ -40,7 +40,7 @@ body{
     text-decoration: none;
     color: var(--black);
 }
-.inicio_de_sesion{
+#inicio_de_sesion{
     padding: 3vh;
     margin: 3% 30%; 
     display: flex;
@@ -52,13 +52,13 @@ body{
     border: 2px solid var(--black);
     border-radius: 20px;
 }
-.inicio_de_sesion h1{
+#inicio_de_sesion h1{
     padding: 0vh 7vh 2vh 7vh;
     font-size: 22px;
     font-weight: lighter;
     text-align: center;
 }
-.inicio_de_sesion h2{
+#inicio_de_sesion h2{
     font-size: 22px;
     font-weight: lighter;
 }
