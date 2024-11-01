@@ -49,32 +49,37 @@ header{
     padding: 3vh;
     margin: 2% 20%;
     background-color: var(--another_white);
-    border: 2px solid var(--black);
+    border-radius: 15px;
 }
-.perfil h2{
-    display: inline;
-    position: relative;
-    text-align: center;
-    font-size: 16px;
-    padding-left: 4vh;
+#foto_usuario{
+    display: inline-block;
+    position: absolute;
+    font-size: 11vh;
 }
-.perfil p{
-    font-size: 12px;
-    padding-left: 4vh;
-}
-.pestañas{
-    margin-top: 20vh;
-    background-color: var(--white);
+.perfil h2, .perfil p{
+    font-size: 20px;
+    margin-left: 15vh;
 }
 a{
     width: min-content;
     color: var(--black);
-    display: inline;
-    position: absolute;
     transition: 1s ease;
 }
 a:hover{
     color: var(--yellow);
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 6vh;
+}
+#añadir{
+    min-width: 300px;
+    background-color: var(--another_white);
+    padding: 20px;
+    border-radius: 10px;
 }
 #añadir_publicacion{
     margin-left: 10px;
