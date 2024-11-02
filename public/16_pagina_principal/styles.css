@@ -44,6 +44,10 @@ header{
     color: var(--black);
     font-size: 6vh;
 }
+#icono_configuracion{
+    color: var(--black);
+    font-size: 6vh;
+}
 .buscar{
     width: auto;
     display: flex;
