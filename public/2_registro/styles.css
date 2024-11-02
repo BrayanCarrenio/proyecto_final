@@ -37,6 +37,11 @@ img{
     color: var(--white);
     font-size: 18px;
     text-decoration: none;
+    transition: 0.2s;
+}
+#regresar_sin_login:hover{
+    background-color: var(--azureradiance);
+    color: var(--white);
 }
 #registro{
     display: flex;
@@ -49,7 +54,7 @@ img{
     text-align: center;
 
     background-color: var(--blue);
-    border: 2px solid var(--gray);
+    box-shadow: 8px 8px 10px var(--gray);
     border-radius: 20px;
 }
 #registro p{
@@ -78,4 +83,10 @@ input{
     text-decoration: none;
     background-color: var(--orange);
     color: var(--white);
+    transition: 0.2s;
+    cursor: pointer;
+}
+#registro_formulario:hover{
+    background-color: var(--white);
+    color: var(--azureradiance);
 }
