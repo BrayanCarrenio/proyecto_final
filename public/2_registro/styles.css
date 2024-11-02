@@ -11,24 +11,18 @@
     --blue: #add8e6;
 }
 body{
-    background-color: var(--green_normal_back);
+    background-color: var(--white);
 }
-#logo{
+.cabecera{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5vh;
+    padding: 0;
 }
-#icono_logo{
-    color: #000000;
-    font-size: 10vh;
-    color: var(--white);
-}
-#logo p{
-    font-size: 36px;
-    color: var(--black);
-    align-self: center;
-    color: var(--white);
+img{
+    margin-left: 20px;
+    width: 200px;   
 }
 #regresar_sin_login{
     padding: 8px 14px;
