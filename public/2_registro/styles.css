@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Be Vietnam Pro", serif;
 }
 :root{
     --darkblue: #0424d9;
@@ -89,4 +89,46 @@ input{
 #registro_formulario:hover{
     background-color: var(--white);
     color: var(--azureradiance);
+}
+.aviso_registro{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.aviso_registro_contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+    padding: 5vh;
+
+    color: var(--white);
+    text-align: center;
+
+    background-color: var(--pictonblue);
+    border-radius: 20px;
+    width: 450px;
+    height: max-content;
+    margin: 12% 33%;
+}
+.aviso_registro_contenido p{
+    padding: 0vh 5vh 2vh 5vh;
+    font-size: 20px;
+    font-weight: bold;
+}
+#confirmar_formulario, #pasar_a_iniciar_sesion{
+    font-size: 16px;
+    padding: 8px 14px;
+    background-color: var(--orange);
+
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
 }

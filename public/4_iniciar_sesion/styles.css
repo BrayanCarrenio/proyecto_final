@@ -1,17 +1,21 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Be Vietnam Pro", serif;
+    font-family: "Bebas Neue", sans-serif;
 }
 :root{
-    --black: #000000;
-    --white: #FFFFFF;
-    --yellow: #ffd966;
-    --green_normal_back: #049a5b;
+    --darkblue: #0424d9;
+    --persianblue: #1a4ada;
+    --azureradiance: #1675f5;
+    --pictonblue: #3d8af2;
     --blue: #add8e6;
+    --black: #0d0d0d;
+    --orange: #f15a24;
+    --white: #e6e6e6;
+    --gray: #aaaaaa;
 }
 body{
-    background-color: var(--green_normal_back);
+    background-color: var(--white);
 }
 #logo{
     display: flex;
