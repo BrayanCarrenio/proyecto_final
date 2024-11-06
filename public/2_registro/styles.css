@@ -15,7 +15,7 @@
     --gray: #aaaaaa;
 }
 body{
-    background-color: var(--white);
+    background-color: var(--blue);
 }
 .cabecera{
     width: 100%;
@@ -53,18 +53,18 @@ img{
 
     text-align: center;
 
-    background-color: var(--blue);
+    background-color: var(--white);
     box-shadow: 8px 8px 10px var(--gray);
     border-radius: 20px;
 }
 #registro p{
     padding: 0vh 7vh 3vh 7vh;
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 #registro h2{
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 input{
     font-size: 15px;
@@ -87,8 +87,8 @@ input{
     cursor: pointer;
 }
 #registro_formulario:hover{
-    background-color: var(--white);
-    color: var(--azureradiance);
+    background-color: var(--azureradiance);
+    color: var(--white);
 }
 .aviso_registro{
     display: none;
