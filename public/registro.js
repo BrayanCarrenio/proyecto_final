@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             if(res.status == 200){
                 alert('Registro Exitoso');
             }else{
-                alert(`Error al registrar ${data.msg}`);
+                alert(`Este usuario ya está registrado`);
             }
         }catch(error){
             console.error(error);
