@@ -41,7 +41,6 @@ img{
 }
 #regresar_sin_login:hover{
     background-color: var(--azureradiance);
-    color: var(--white);
 }
 #registro{
     display: flex;
@@ -88,7 +87,6 @@ input{
 }
 #registro_formulario:hover{
     background-color: var(--azureradiance);
-    color: var(--white);
 }
 .aviso_registro{
     display: none;

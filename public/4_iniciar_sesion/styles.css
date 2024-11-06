@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Be Vietnam Pro", serif;
 }
 :root{
     --darkblue: #0424d9;
@@ -15,34 +15,32 @@
     --gray: #aaaaaa;
 }
 body{
-    background-color: var(--white);
+    background-color: var(--blue);
 }
-#logo{
+.cabecera{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5vh;
+    padding: 0;
 }
-#icono_logo{
-    color: #000000;
-    font-size: 10vh;
-    color: var(--white);
-}
-#logo p{
-    font-size: 36px;
-    color: var(--black);
-    align-self: center;
-    color: var(--white);
+img{
+    margin-left: 20px;
+    width: 200px;   
 }
 #regresar_sin_login{
-    font-size: 14px;
-    padding: 8px 14px;
+    padding: 7px 14px;
     margin-left: 4%;
-    background-color: var(--yellow);
     border: none;
     border-radius: 20px 10px 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 18px;
     text-decoration: none;
-    color: var(--black);
+    transition: 0.2s;
+}
+#regresar_sin_login:hover{
+    background-color: var(--azureradiance);
 }
 #inicio_de_sesion{
     padding: 3vh;
@@ -52,37 +50,44 @@ body{
     align-items: center;
     gap: 3vh;
 
-    background-color: var(--blue);
-    border: 2px solid var(--black);
+    background-color: var(--white);
+    box-shadow: 8px 8px 10px var(--gray);
     border-radius: 20px;
 }
 #inicio_de_sesion h1{
     padding: 0vh 7vh 2vh 7vh;
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: bold;
     text-align: center;
 }
 #inicio_de_sesion h2{
     font-size: 22px;
-    font-weight: lighter;
+    font-weight: bold;
 }
 input{
+    font-size: 15px;
     text-align: center;
     width: 88%;
     padding: 5px;
-    border: none;
+    border: 1px solid var(--black);
     border-radius: 20px;
-    align-self: center;
 }
 ul {
     list-style: none;
     align-self: flex-start;
+
+    font-weight: bold;
 }
 #iniciar_sesion{
-    font-size: 15px;
     padding: 8px 14px;
-    background-color: var(--yellow);
-    border: 1px solid var(--black);
+    font-size: 18px;    
+    border: none;
     border-radius: 20px;
-    align-self: center;
+    background-color: var(--orange);
+    color: var(--white);
+    transition: 0.2s;
+    cursor: pointer;
+}
+#iniciar_sesion:hover{
+    background-color: var(--azureradiance);
 }
