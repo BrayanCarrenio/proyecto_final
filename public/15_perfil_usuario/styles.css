@@ -4,51 +4,50 @@
     font-family: "Be Vietnam Pro", serif;
 }
 :root{
-    --black: #000000;
-    --white: #FFFFFF;
-    --another_white: #e0e0e0;
-    --yellow: #ffd966;
-    --green_normal_back: #049a5b;
+    --darkblue: #0424d9;
+    --persianblue: #1a4ada;
+    --azureradiance: #1675f5;
+    --pictonblue: #3d8af2;
     --blue: #add8e6;
+    --black: #0d0d0d;
+    --orange: #f15a24;
+    --white: #e6e6e6;
+    --gray: #aaaaaa;
 }
 body{
-    background-color: var(--green_normal_back);
+    background-color: var(--white);
 }
 header{
-    background-color: var(--blue);
+    background-color: var(--darkblue);
     width: 100%;
     padding: 5px;
 }
-.cabecera, #logo, #usuario_boton{
+.cabecera, #usuario_boton{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-#icono_logo{
-    color: var(--black);
-    font-size: 10vh;
-}
-#logo{
-    font-size: 36px;
-    color: var(--black);
-    gap: 5vh;
+img{
+    margin-left: 5%;
+    width: 180px;   
 }
 #usuario_boton{
     gap: 2vh;
-    margin-right: 20px;
+    margin-right: 5%;
 }
 #usuario_boton p{
+    color: var(--white);
     font-size: 3vh;
 }
 #icono_usuario{
-    color: var(--black);
+    color: var(--white);
     font-size: 6vh;
 }
 .perfil{
     padding: 3vh;
     margin: 2% 20%;
-    background-color: var(--another_white);
+    background-color: var(--pictonblue);
     border-radius: 15px;
 }
 #foto_usuario{
@@ -59,14 +58,15 @@ header{
 .perfil h2, .perfil p{
     font-size: 20px;
     margin-left: 15vh;
+    color: var(--white);
 }
 a{
     width: min-content;
-    color: var(--black);
-    transition: 1s ease;
+    color: var(--white);
+    transition: 0.5s ease;
 }
 a:hover{
-    color: var(--yellow);
+    color: var(--orange);
 }
 .botones{
     display: flex;
@@ -74,10 +74,11 @@ a:hover{
     justify-content: center;
     text-align: center;
     gap: 6vh;
+    color: var(--white);
 }
 #añadir{
     min-width: 300px;
-    background-color: var(--another_white);
+    background-color: var(--azureradiance);
     padding: 20px;
     border-radius: 10px;
 }
