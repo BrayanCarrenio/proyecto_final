@@ -4,99 +4,70 @@
     font-family: "Be Vietnam Pro", serif;
 }
 :root{
-    --black: #000000;
-    --white: #FFFFFF;
-    --yellow: #ffd966;
-    --green_normal_back: #049a5b;
+    --darkblue: #0424d9;
+    --persianblue: #1a4ada;
+    --azureradiance: #1675f5;
+    --pictonblue: #3d8af2;
     --blue: #add8e6;
+    --black: #0d0d0d;
+    --orange: #f15a24;
+    --white: #e6e6e6;
+    --gray: #aaaaaa;
 }
 body{
-    background-color: var(--green_normal_back);
+    background-color: var(--blue);
 }
 header{
-    background-color: var(--blue);
+    background-color: var(--persianblue);
     width: 100%;
-    padding: 10px;
-    border: 2px solid var(--black);
 }
-.cabecera, #logo{
+.cabecera{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
-#icono_logo{
-    color: #000000;
-    font-size: 10vh;
-}
-#logo{
-    font-size: 36px;
-    color: var(--black);
-    gap: 5vh;
+img{
+    width: 180px;   
 }
 #regresar_pagina_principal{
     display: inline-block;
-    position: relative;
-    margin: 10px 0px 0px 5px;
-    padding: 8px 14px;
-    background-color: var(--yellow);
+    position: absolute;
+    padding: 7px 14px;
+    margin-top: 2%;
+    margin-left: 4%;
     border: none;
     border-radius: 20px 10px 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 18px;
     text-decoration: none;
-    color: var(--black);
-    font-size: 15px;
+    transition: 0.2s;
+}
+#regresar_pagina_principal:hover{
+    background-color: var(--azureradiance);
 }
 .configuracion_perfil{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20vh;
+    margin-top: 2%;
 }
-.datos_usuario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 400px;
-    height: 480px;
-    gap: 3vh;
-    padding: 10px;
-    
-    background-color: var(--blue);
-    border: 2px solid var(--black);
-    border-radius: 20px;
-    font-size: 16px;
-}
-.datos_usuario input{
-    font-size: 14px;
-    text-align: center;
-    width: 90%;
-}
-.datos_usuario textarea{
-    font-size: 14px;
-    text-align: center;
-    width: 90%;
-    min-height: 90px;
-    resize: none;
-}
-.cambio_contraseña{
+#info_config{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
     width: 400px;
-    height: 480px;
+    height: 420px;
 
     gap: 15px;
-    background-color: var(--blue);
-    border: 2px solid var(--black);
+    background-color: var(--white);
+    box-shadow: 8px 8px 10px var(--gray);
     border-radius: 20px;
-
     font-size: 16px;
 }
-.cambio_contraseña input{
+#info_config input{
     font-size: 14px;
     text-align: center;
     width: 90%;
@@ -104,12 +75,18 @@ header{
     border: none;
     border-radius: 20px;
 }
-.cambio_contraseña button{
-    font-size: 14px;
-    background-color: var(--yellow);
-    color: var(--black);
-    padding: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 5vh;
+#info_config button{
+    padding: 8px 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--white);
+    transition: 0.2s;
+    cursor: pointer;
+}
+#confirmar_ajustes:hover{
+    background-color: var(--azureradiance);
 }

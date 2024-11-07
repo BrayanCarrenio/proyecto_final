@@ -21,7 +21,7 @@ header{
     background-color: var(--persianblue);
     width: 100%;
 }
-.cabecera, #logo, #botones_cabecera{
+.cabecera, #botones_cabecera{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

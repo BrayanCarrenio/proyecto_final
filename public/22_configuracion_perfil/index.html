@@ -13,29 +13,18 @@
 <body>
     <header>
         <nav class="cabecera">
-            <div id="logo">
-                <span class="material-symbols-outlined" id="icono_logo">
-                    headphones
-                    </span>
-                <p><span id="titulo">Lights </span>On!</p>
-            </div>
+            <img src="../img/logo_blanco.png" alt="logo_pag">
         </nav>
     </header>
     <a id="regresar_pagina_principal" href="../16_pagina_principal/index.html">Regresar</a>
     <section class="configuracion_perfil">
-        <form class="datos_usuario">
-            <h2>Nombre Usuario</h2>
-            <input type="text" placeholder="ej. Pedro Rosa Marquez Sanchez">
-            <h2>Descripción</h2>
-            <textarea name="descripcion" id="descripcion" placeholder="¡Haz llamativo tu perfil!"></textarea>
-        </form>
-        <form class="cambio_contraseña">
+        <form id="info_config">
+            <h2>Nombre</h2>
+            <input id="username_config" type="email" placeholder="example@gmail.com.co">
             <h2>Correo</h2>
-            <input class="correo" type="email" placeholder="example@gmail.com.co">
-            <h2>Contraseña</h2>
-            <input class="contraseña" type="password" placeholder="Mínimo 8 caracteres, se puede usar números, caracteres especiales">
-            <h2>Repetir Contraseña</h2>
-            <input class="repetir_Contraseña" type="password" placeholder="Mínimo 8 caracteres, se puede usar números, caracteres especiales">
+            <input id="contraseña_config" type="password" placeholder="Mínimo 8 caracteres, se puede usar números, caracteres especiales">
+            <h2> Contraseña</h2>
+            <input id="contraseña_config" type="password" placeholder="Mínimo 8 caracteres, se puede usar números, caracteres especiales">
             <button id="confirmar_ajustes" type="submit">Confirmar Ajustes</button> <!--ONCLICK?-->
         </form>
     </section>
