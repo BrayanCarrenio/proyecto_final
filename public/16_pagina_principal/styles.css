@@ -4,48 +4,47 @@
     font-family: "Be Vietnam Pro", serif;
 }
 :root{
-    --black: #000000;
-    --white: #FFFFFF;
-    --yellow: #ffd966;
-    --green_normal_back: #049a5b;
+    --darkblue: #0424d9;
+    --persianblue: #1a4ada;
+    --azureradiance: #1675f5;
+    --pictonblue: #3d8af2;
     --blue: #add8e6;
+    --black: #0d0d0d;
+    --orange: #f15a24;
+    --white: #e6e6e6;
+    --gray: #aaaaaa;
 }
 body{
-    background-color: var(--green_normal_back);
+    background-color: var(--white);
 }
 header{
-    background-color: var(--blue);
+    background-color: var(--persianblue);
     width: 100%;
-    padding: 10px;
 }
-.cabecera, #logo, #usuario_boton{
+.cabecera, #usuario_boton{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-#icono_logo{
-    color: var(--black);
-    font-size: 10vh;
-}
-#logo{
-    font-size: 36px;
-    color: var(--black);
-    gap: 5vh;
+img{
+    margin-left: 5%;
+    width: 180px;   
 }
 #usuario_boton{
     gap: 2vh;
-    margin-right: 20px;
+    margin-right: 5%;
 }
 #usuario_boton p{
+    color: var(--white);
     font-size: 3vh;
 }
 #icono_usuario{
-    color: var(--black);
+    color: var(--white);
     font-size: 6vh;
 }
 #icono_configuracion{
-    color: var(--black);
+    color: var(--white);
     font-size: 6vh;
 }
 .buscar{
