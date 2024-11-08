@@ -14,13 +14,26 @@
     --white: #e6e6e6;
     --gray: #aaaaaa;
 }
-body{
-    background-color: var(--white);
+body {
+	background: linear-gradient(-45deg, #0424d9, #1675f5, #3d8af2, #add8e6);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 header{
-    background-color: var(--darkblue);
-    width: 100%;
-}
+    background-color: var(--black);
+  }
 .cabecera, #usuario_boton{
     display: flex;
     flex-direction: row;
@@ -52,7 +65,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 15px 0px; 
+    margin: 20px;
 }
 .buscar input{
     width: 100vh;
