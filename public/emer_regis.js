@@ -10,5 +10,3 @@ abrir_ventana.addEventListener("click", function(){
 function redirigirPrincipal(){
     window.location.href = '../16_pagina_principal/index.html';
 }
-
-//ventana emergente para la interfaz del evento en la pag. principal
