@@ -120,6 +120,7 @@ input{
     padding: 10px 15px;
     border-radius: 10px;
     font-size: 18px;
+    cursor: pointer;
 }
 #registro_formulario:hover{
     border: 1px solid;
