@@ -91,35 +91,58 @@ h1{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
-.aviso_registro_contenido{
+.crear_evento{
+    padding: 3vh;
+    max-width: 600px;
+    min-height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;  
+    border-radius: 20px;
+    background-color: var(--blue);  
+    gap: 4vh;
+}
+.informacion_evento{
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+}
+#imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2vh;
-    padding: 5vh;
-
-    color: var(--white);
     text-align: center;
-
-    background-color: var(--pictonblue);
-    border-radius: 20px;
-    width: 450px;
-    height: max-content;
-    margin: 12% 33%;
+    gap: 4vh;
 }
-.aviso_registro_contenido p{
-    padding: 0vh 5vh 2vh 5vh;
-    font-size: 20px;
-    font-weight: bold;
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
 }
-#confirmar_formulario, #pasar_a_iniciar_sesion{
-    font-size: 16px;
-    padding: 8px 14px;
-    background-color: var(--orange);
-
-    border-radius: 20px;
+#inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.crear_evento h1{
+    font-size: 25px;
+}
+#imagen img{
+    width: 150px;
+    height: 100px;
+}
+#imagen textarea{
+    width: 150px;
+    height: 100px;
+    resize: none;
+}
+.crear_evento a{
+    padding: 10px;
+    background-color: var(--yellow);
+    border-radius: 15px;
+    color: var(--black);
     text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
 }

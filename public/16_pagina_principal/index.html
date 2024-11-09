@@ -31,11 +31,34 @@
     <section class="eventos">
     </section>
     <div id="aviso_evento" class="aviso_evento">
-        <div class="aviso_registro_contenido">
-            <p>Revisa la bandeja de entrada de tu correo electrónico para continuar con el registro.</p>
-            <a id="confirmar_formulario" href="../1_pag_sin_login/index.html">Aceptar</a>
-            <a id="pasar_a_iniciar_sesion" href="../4_iniciar_sesion/index.html">Iniciar Sesión</a>
-        </div>
+        <section class="crear_evento">
+            <h1>Crea un Evento</h1>
+            <section class="informacion_evento">
+                <section id="imagen">
+                    <img src="../img/blog-sofa.webp">
+                    <p>Ingresa una imágen</p>
+                    <h2>Descripcion</h2>
+                    <textarea name="descripcion_evento" id="desc_evento"></textarea>
+                </section>
+                <section id="info">
+                    <h2>Título</h2>
+                    <h2>Fecha</h2>                
+                    <h2>Dirección</h2>
+                    <h2>Cupos Disponibles</h2>
+                    <h2>Hora</h2>
+                    <h2>Número de Contacto</h2>
+                </section>
+                <form id="inputs">
+                    <input type="text" name="titulo" id="titulo_evento" required>
+                    <input type="date" name="fecha" id="fecha_evento" required>
+                    <input type="text" name="titulo" id="direccion_evento" required>
+                    <input type="number" name="titulo" id="cupos_evento" required>
+                    <input type="time" name="titulo" id="hora_evento" required>
+                    <input type="tel" name="titulo" id="numero_contacto_evento" pattern="[0-9]{10}" required>
+                </form>
+            </section>
+            <a href="../14_evento_creado/index.html">Publicar</a>
+        </section>
     </div>
     <script src="../emer_event.js"></script>
 </body>

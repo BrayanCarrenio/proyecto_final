@@ -53,19 +53,19 @@ body{
     justify-content: center;
     gap: 30px;
 }
-h1{
+.crear_evento h1{
     font-size: 25px;
 }
-img{
+#imagen img{
     width: 150px;
     height: 100px;
 }
-textarea{
+#imagen textarea{
     width: 150px;
     height: 100px;
     resize: none;
 }
-a{
+.crear_evento a{
     padding: 10px;
     background-color: var(--yellow);
     border-radius: 15px;
