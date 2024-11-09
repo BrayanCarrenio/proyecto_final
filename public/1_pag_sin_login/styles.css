@@ -16,7 +16,7 @@
   --gray: #aaaaaa;
 }
 body {
-	background: linear-gradient(-45deg, #596dd9, #7eafef, #4576b5, #d0e8f0);
+	background: linear-gradient(-45deg, #616fc3, #7c9ecb, #4b71a3, #618bcb);
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
 	height: 100vh;
