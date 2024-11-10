@@ -17,11 +17,18 @@ body{
     background-color: var(--lightblue);
     height: 100vh;
 }
-p{
+.container{
+    border: black solid 4px;
+    background-color: var(--blue);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+.container p{
     margin: 20px 0px;
     font-size: 20px;
 }
-a{
+.container a{
     padding: 5px;
     background-color: var(--yellow);
     border: none;
@@ -32,10 +39,4 @@ a{
     text-decoration: none;
     color: var(--black);    
 }
-.container{
-    border: black solid 4px;
-    background-color: var(--blue);
-    width: 500px;
-    padding: 20px;
-    text-align: center;
-}
+
