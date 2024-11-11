@@ -44,6 +44,9 @@ img{
     margin-left: 5%;
     width: 180px;   
 }
+.cabecera button{
+    cursor: pointer;
+}
 #usuario_boton{
     gap: 2vh;
     margin-right: 5%;
@@ -139,12 +142,13 @@ h1{
     height: 100px;
     resize: none;
 }
-.crear_evento a{
+.crear_evento button{
     padding: 10px;
     background-color: var(--yellow);
     border-radius: 15px;
     color: var(--black);
     text-decoration: none;
+    cursor: pointer;
 }
 .aviso_evento_creado{
     display: none;
