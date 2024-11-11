@@ -16,35 +16,50 @@
             <img src="../img/logo_blanco.png" alt="logo_pag">
             <a href="">Sobre Nosotros</a>
             <button id="evento_formulario">Crear Evento</button>
-            <section id="usuario_boton">
+            <div id="usuario_boton">
                 <p>¡Bienvenid@!</p>
                 <span class="material-symbols-outlined" id="icono_usuario">person</span>
                 <a href="../22_configuracion_perfil/index.html"><span class="material-symbols-outlined" id="icono_configuracion">settings</span>
                 </a>
-            </section>
+            </div>
         </nav>
     </header>
     <div class="buscar">
         <input class="busqueda" type="search" placeholder="Busca a tus artistas o eventos favoritos">
     </div>
     <h1>Eventos</h1>
-    <section id="eventos">
+    <section id="eventos" class="eventos">
         <div class="card-container" id="card-container">
-
+            <div class="card">
+                <img src="/public/img/october.webp" alt="img" />
+                <h2>OctoberFest</h2>
+                <p>Fecha: 26/10/2024</p>
+                <p>Lugar: Cll 5 #13-67</p>
+                <p>Cupos Disponibles: 50</p>
+                <button>Asistir</button>
+              </div>
+              <div class="card">
+                <img src="/public/img/mega.webp" alt="img" />
+                <h2>Megaland</h2>
+                <p>Fecha: 30/11/2024</p>
+                <p>Lugar: Parque Simón Bolivar</p>
+                <p>Cupos Disponibles: 500</p>
+                <button>Asistir</button>
+              </div>
         </div>
     </section>
     <div id="aviso_evento" class="aviso_evento">
-        <section class="crear_evento">
+        <div class="crear_evento">
             <h1>Crea un Evento</h1>
-            <section class="informacion_evento">
-                <section id="info">
+            <div class="informacion_evento">
+                <div id="info">
                     <h2>Título</h2>
                     <h2>Fecha</h2>                
                     <h2>Dirección</h2>
                     <h2>Cupos Disponibles</h2>
                     <h2>Hora</h2>
                     <h2>Número de Contacto</h2>
-                </section>
+                </div>
                 <form id="inputs">
                     <input type="text" name="titulo" id="titulo_evento" required>
                     <input type="date" name="fecha" id="fecha_evento" required>
@@ -53,13 +68,13 @@
                     <input type="time" name="titulo" id="hora_evento" required>
                     <input type="tel" name="titulo" id="numero_contacto_evento" pattern="[0-9]{10}" required>
                 </form>
-                <section id="descripcion">
+                <div id="descripcion">
                     <h2>Descripcion</h2>
                     <textarea name="descripcion_evento" id="desc_evento"></textarea>
-                </section>
-            </section>
+                </div>
+            </div>
             <button id="publicar_evento" type="submit">Publicar</button>
-        </section>
+        </div>
     </div>
     <div id="aviso_evento_creado" class="aviso_evento_creado">
         <div class="container">
