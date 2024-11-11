@@ -28,18 +28,15 @@
         <input class="busqueda" type="search" placeholder="Busca a tus artistas o eventos favoritos">
     </div>
     <h1>Eventos</h1>
-    <section class="eventos">
+    <section id="eventos">
+        <div class="card-container" id="card-container">
+
+        </div>
     </section>
     <div id="aviso_evento" class="aviso_evento">
         <section class="crear_evento">
             <h1>Crea un Evento</h1>
             <section class="informacion_evento">
-                <section id="imagen">
-                    <img src="../img/blog-sofa.webp">
-                    <p>Ingresa una imágen</p>
-                    <h2>Descripcion</h2>
-                    <textarea name="descripcion_evento" id="desc_evento"></textarea>
-                </section>
                 <section id="info">
                     <h2>Título</h2>
                     <h2>Fecha</h2>                
@@ -56,6 +53,10 @@
                     <input type="time" name="titulo" id="hora_evento" required>
                     <input type="tel" name="titulo" id="numero_contacto_evento" pattern="[0-9]{10}" required>
                 </form>
+                <section id="descripcion">
+                    <h2>Descripcion</h2>
+                    <textarea name="descripcion_evento" id="desc_evento"></textarea>
+                </section>
             </section>
             <button id="publicar_evento" type="submit">Publicar</button>
         </section>
@@ -69,5 +70,6 @@
     </div>
     <script src="../emer_event.js"></script>
     <script src="../emer_event_confirm.js"></script>
+    <script src="../evento_pag.js"></script>
 </body>
 </html>

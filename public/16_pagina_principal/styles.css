@@ -110,13 +110,17 @@ h1{
     flex-direction: row;
     gap: 5vh;
 }
-#imagen{
+#descripcion{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 4vh;
+}
+#descripcion textarea{
+    width: 150px;
+    height: 230px;
+    resize: none;
 }
 #info{
     display: flex;
@@ -132,15 +136,6 @@ h1{
 }
 .crear_evento h1{
     font-size: 25px;
-}
-#imagen img{
-    width: 150px;
-    height: 100px;
-}
-#imagen textarea{
-    width: 150px;
-    height: 100px;
-    resize: none;
 }
 .crear_evento button{
     padding: 10px;

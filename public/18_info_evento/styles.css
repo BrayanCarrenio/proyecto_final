@@ -52,10 +52,13 @@ img{
     
 }
 .dos{
-    gap:10px
-}
-.num{
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 5vh;
 }
 a{
     padding: 10px;
