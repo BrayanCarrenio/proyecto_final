@@ -5,7 +5,7 @@ const cupo_evento = document.getElementById('cupos_evento');
 const hora_evento = document.getElementById('hora_evento');
 const num_evento = document.getElementById('numero_contacto_evento');
 const desc_evento = document.getElementById('desc_evento');
-const boton_publicar = document.querySelector('publicar_evento');
+const boton_publicar = document.getElementById('publicar_evento');
 const listaEventos = document.getElementById('card-container');
 
 boton_publicar.addEventListener('click', agregarEvento);
