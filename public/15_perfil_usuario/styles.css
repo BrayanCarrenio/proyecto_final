@@ -68,21 +68,3 @@ a{
 a:hover{
     color: var(--orange);
 }
-.botones{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    gap: 6vh;
-    color: var(--white);
-}
-#añadir{
-    min-width: 300px;
-    background-color: var(--azureradiance);
-    padding: 20px;
-    border-radius: 10px;
-}
-#añadir_publicacion{
-    margin-left: 10px;
-    font-size: 7vh;
-}

@@ -46,6 +46,22 @@ img{
 #regresar_pagina_principal:hover{
     background-color: var(--azureradiance);
 }
+#cerrar_sesion{
+    display: inline-block;
+    position: absolute;
+    padding: 7px 14px;
+    margin-left: 4%;
+    border: none;
+    border-radius: 20px 10px 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+#cerrar_sesion:hover{
+    background-color: var(--azureradiance);
+}
 .configuracion_perfil{
     width: 100%;
     display: flex;

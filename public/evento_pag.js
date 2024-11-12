@@ -1,4 +1,4 @@
-const tit_evento = document.getElementById('titulo_evento'); 
+const tit_evento = document.getElementById('titulo_evento');  
 const fecha_evento = document.getElementById('fecha_evento');
 const direc_evento = document.getElementById('direccion_evento');
 const cupo_evento = document.getElementById('cupos_evento');
@@ -14,7 +14,8 @@ window.addEventListener('load', cargarEventosGuardados);
 boton_publicar.addEventListener('click', agregarEvento);
 
 function agregarEvento() {
-    if (tit_evento.value && fecha_evento.value && direc_evento.value && cupo_evento.value) {
+    // Verificar que todos los campos estén llenos
+    if (tit_evento.value && fecha_evento.value && direc_evento.value && cupo_evento.value && hora_evento.value && num_evento.value) {
         let eventoNuevo = document.createElement('div');
         eventoNuevo.classList.add('card');
 
@@ -23,16 +24,30 @@ function agregarEvento() {
         eventoNuevo.appendChild(titulo);
 
         let fecha = document.createElement('p');
-        fecha.innerText = fecha_evento.value;
+        fecha.innerText = `Fecha: ${fecha_evento.value}`;
         eventoNuevo.appendChild(fecha);
 
         let lugar = document.createElement('p');
-        lugar.innerText = direc_evento.value;
+        lugar.innerText = `Dirección: ${direc_evento.value}`;
         eventoNuevo.appendChild(lugar);
 
         let cupos = document.createElement('p');
-        cupos.innerText = cupo_evento.value;
+        cupos.innerText = `Cupos: ${cupo_evento.value}`;
         eventoNuevo.appendChild(cupos);
+
+        let hora = document.createElement('p');
+        hora.innerText = `Hora: ${hora_evento.value}`;
+        eventoNuevo.appendChild(hora);
+
+        let numero = document.createElement('p');
+        numero.innerText = `Número: ${num_evento.value}`;
+        eventoNuevo.appendChild(numero);
+
+        if (desc_evento.value) {
+            let descripcion = document.createElement('p');
+            descripcion.innerText = `Descripción: ${desc_evento.value}`;
+            eventoNuevo.appendChild(descripcion);
+        }
 
         let buton_asistir = document.createElement('button');
         buton_asistir.innerText = "Asistir";
@@ -44,7 +59,10 @@ function agregarEvento() {
             titulo: tit_evento.value,
             fecha: fecha_evento.value,
             direccion: direc_evento.value,
-            cupos: cupo_evento.value
+            cupos: cupo_evento.value,
+            hora: hora_evento.value,
+            numero: num_evento.value,
+            descripcion: desc_evento.value || '' // Guardar descripción, aunque sea vacía
         });
         localStorage.setItem('eventos', JSON.stringify(eventosGuardados));
 
@@ -56,6 +74,9 @@ function agregarEvento() {
         fecha_evento.value = '';
         direc_evento.value = '';
         cupo_evento.value = '';
+        hora_evento.value = '';
+        num_evento.value = '';
+        desc_evento.value = '';
     } else {
         alert("Debes ingresar la información del evento");
     }
@@ -73,16 +94,30 @@ function cargarEventosGuardados() {
         eventoNuevo.appendChild(titulo);
 
         let fecha = document.createElement('p');
-        fecha.innerText = evento.fecha;
+        fecha.innerText = `Fecha: ${evento.fecha}`;
         eventoNuevo.appendChild(fecha);
 
         let lugar = document.createElement('p');
-        lugar.innerText = evento.direccion;
+        lugar.innerText = `Dirección: ${evento.direccion}`;
         eventoNuevo.appendChild(lugar);
 
         let cupos = document.createElement('p');
-        cupos.innerText = evento.cupos;
+        cupos.innerText = `Cupos: ${evento.cupos}`;
         eventoNuevo.appendChild(cupos);
+
+        let hora = document.createElement('p');
+        hora.innerText = `Hora: ${evento.hora}`;
+        eventoNuevo.appendChild(hora);
+
+        let numero = document.createElement('p');
+        numero.innerText = `Número: ${evento.numero}`;
+        eventoNuevo.appendChild(numero);
+
+        if (evento.descripcion) {
+            let descripcion = document.createElement('p');
+            descripcion.innerText = `Descripción: ${evento.descripcion}`;
+            eventoNuevo.appendChild(descripcion);
+        }
 
         let buton_asistir = document.createElement('button');
         buton_asistir.innerText = "Asistir";
