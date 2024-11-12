@@ -5,10 +5,11 @@
 }
 :root{
     --darkblue: #0424d9;
-    --persianblue:#213E60;
+    --persianblue: #213E60;
     --azureradiance: #1675f5;
     --pictonblue: #3d8af2;
     --blue: #add8e6;
+    --blueammi: #6494e7;
     --black: #0d0d0d;
     --orange: #f15a24;
     --white: #e6e6e6;
@@ -44,37 +45,36 @@ img{
     width: 180px;   
 }
 #regresar_pagina_principal{
+    box-shadow: inset 0 0 20px #e3eafc;
+    outline: 1px solid;
+    outline-color: #e3eafc;
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.1, 1, 0.2, 1);
+    outline-color: #e3eafc;
+    outline-offset: 0px; 
+    color: #e3eafc;
+    border:none;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 20px;
     display: inline-block;
     position: absolute;
-    padding: 7px 14px;
-    margin-top: 2%;
-    margin-left: 4%;
-    border: none;
-    border-radius: 20px 10px 10px 20px;
-    background-color: var(--orange);
-    color: var(--white);
-    font-size: 18px;
-    text-decoration: none;
-    transition: 0.2s;
 }
 #regresar_pagina_principal:hover{
-    background-color: var(--azureradiance);
-}
-#cerrar_sesion{
-    display: inline-block;
-    position: absolute;
-    padding: 7px 14px;
-    margin-left: 4%;
-    border: none;
-    border-radius: 20px 10px 10px 20px;
-    background-color: var(--orange);
-    color: var(--white);
+    border: 1px solid;
+    box-shadow: inset 0 0 20px var(--blueammi), 0 0 20px var(--blueammi);
+    outline-offset: 8px;
+    outline-color: var(--persianblue);
+    text-shadow: 1px 1px 2px var(--persianblue);
+    background-color: var(--persianblue);
     font-size: 18px;
-    text-decoration: none;
-    transition: 0.2s;
-}
-#cerrar_sesion:hover{
-    background-color: var(--azureradiance);
+    cursor: pointer; 
 }
 .configuracion_perfil{
     width: 100%;
@@ -93,7 +93,7 @@ img{
 
     gap: 15px;
     background-color: var(--persianblue);
-    box-shadow: 8px 8px 10px var(--gray);
+    box-shadow: 5px 5px 5px var(--white);
     border-radius: 20px;
     font-size: 16px;
 }
@@ -105,21 +105,66 @@ img{
     border: none;
     border-radius: 20px;
 }
-#info_config button{
-    padding: 8px 14px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    background-color: var(--orange);
-    color: var(--white);
-    transition: 0.2s;
-    cursor: pointer;
-}
 #info_config h2{
     color: white;
 }
+#confirmar_ajustes{
+    box-shadow: inset 0 0 20px #e3eafc;
+    outline: 1px solid;
+    outline-color: #e3eafc;
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.1, 1, 0.2, 1);
+    outline-color: #e3eafc;
+    outline-offset: 0px; 
+    color: #e3eafc;
+    border:none;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
 #confirmar_ajustes:hover{
-    background-color: var(--azureradiance);
+    border: 1px solid;
+    box-shadow: inset 0 0 20px var(--blue), 0 0 20px var(--blue);
+    outline-offset: 8px;
+    outline-color: var(--white);
+    text-shadow: 1px 1px 2px var(--blue);
+    background-color: var(--blue);
+    font-size: 18px;
+}
+#cerrar_sesion{
+    box-shadow: inset 0 0 20px #e3eafc;
+    outline: 1px solid;
+    outline-color: #e3eafc;
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.1, 1, 0.2, 1);
+    outline-color: #e3eafc;
+    outline-offset: 0px; 
+    color: #e3eafc;
+    border:none;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 50px;
+    display: inline-block;
+    position: absolute;
+}
+#cerrar_sesion:hover{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px var(--blueammi), 0 0 20px var(--blueammi);
+    outline-offset: 8px;
+    outline-color: var(--persianblue);
+    text-shadow: 1px 1px 2px var(--persianblue);
+    background-color: var(--persianblue);
+    font-size: 18px;
+    cursor: pointer; 
 }
