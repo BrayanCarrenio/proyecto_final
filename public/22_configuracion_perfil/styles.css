@@ -5,7 +5,7 @@
 }
 :root{
     --darkblue: #0424d9;
-    --persianblue: #1a4ada;
+    --persianblue:#213E60;
     --azureradiance: #1675f5;
     --pictonblue: #3d8af2;
     --blue: #add8e6;
@@ -14,11 +14,25 @@
     --white: #e6e6e6;
     --gray: #aaaaaa;
 }
-body{
-    background-color: var(--blue);
+body {
+	background: linear-gradient(-45deg, #616fc3, #7c9ecb, #4b71a3, #618bcb);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 header{
-    background-color: var(--black);
+    background-color: var(--persianblue);
     width: 100%;
 }
 .cabecera{
@@ -78,7 +92,7 @@ img{
     height: 420px;
 
     gap: 15px;
-    background-color: var(--white);
+    background-color: var(--persianblue);
     box-shadow: 8px 8px 10px var(--gray);
     border-radius: 20px;
     font-size: 16px;
@@ -102,6 +116,9 @@ img{
     color: var(--white);
     transition: 0.2s;
     cursor: pointer;
+}
+#info_config h2{
+    color: white;
 }
 #confirmar_ajustes:hover{
     background-color: var(--azureradiance);
