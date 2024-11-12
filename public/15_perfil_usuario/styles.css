@@ -14,11 +14,8 @@
     --white: #e6e6e6;
     --gray: #aaaaaa;
 }
-body{
-    background-color: var(--white);
-}
 header{
-    background-color: var(--darkblue);
+    background-color: var(--black);
     width: 100%;
     padding: 5px;
 }
@@ -48,6 +45,7 @@ img{
     padding: 3vh;
     margin: 2% 20%;
     background-color: var(--pictonblue);
+    box-shadow: 3px 3px var(--persianblue);
     border-radius: 15px;
 }
 #foto_usuario{
@@ -60,11 +58,24 @@ img{
     margin-left: 15vh;
     color: var(--white);
 }
-a{
-    width: min-content;
-    color: var(--white);
-    transition: 0.5s ease;
+#tit_mis_eventos{
+    margin-left: 15vh;
+    margin-bottom: 24px;
 }
-a:hover{
-    color: var(--orange);
+#eventos_perfil {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px;
+    justify-items: center;
+    margin: 0;
+}
+#mis_eventos{
+    width: 400px;
+    padding: 20px;
+    background-color: var(--pictonblue);
+    color: var(--white);
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px var(--persianblue);
 }
