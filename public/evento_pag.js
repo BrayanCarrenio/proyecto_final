@@ -51,6 +51,7 @@ function agregarEvento() {
 
         let buton_asistir = document.createElement('button');
         buton_asistir.innerText = "Asistir";
+        buton_asistir.id = "boton_asistir";
         eventoNuevo.appendChild(buton_asistir);
 
         // Guardar el evento en el localStorage
@@ -121,8 +122,37 @@ function cargarEventosGuardados() {
 
         let buton_asistir = document.createElement('button');
         buton_asistir.innerText = "Asistir";
+        buton_asistir.id = "boton_asistir";
         eventoNuevo.appendChild(buton_asistir);
+
+        buton_asistir.addEventListener('click', function() {
+            mostrarPopup(evento);
+        });
+
 
         listaEventos.appendChild(eventoNuevo);
     });
+}
+
+function mostrarPopup(evento) {
+    // Crear la estructura del popup
+    let popup = document.createElement('div');
+    popup.classList.add('popup');
+
+    let mensaje = document.createElement('p');
+    mensaje.innerText = `¡Haz confirmado tu asistencia para el evento ${evento.titulo}!. Revisa tus notificaciones, correo y mensajes.`;
+    popup.appendChild(mensaje);
+
+    let cerrarBtn = document.createElement('button');
+    cerrarBtn.innerText = 'Aceptar';
+    cerrarBtn.onclick = function() {
+        cerrarPopup(popup);
+    };
+    popup.appendChild(cerrarBtn);
+
+    document.body.appendChild(popup);
+}
+
+function cerrarPopup(popup) {
+    document.body.removeChild(popup);
 }
