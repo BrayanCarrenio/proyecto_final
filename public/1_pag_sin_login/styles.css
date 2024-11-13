@@ -214,3 +214,14 @@ button:hover{
   animation-timeline: view();
   animation-range: entry 10% entry 80%;
 }
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--persianblue);
+  padding: 10px;
+  color: var(--white);
+  margin-top: 20px;
+  gap: 200px;
+  align-items: center;
+  
+}
